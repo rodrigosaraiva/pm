@@ -33,7 +33,7 @@ func main() {
 	// get start time
 	start := time.Now()
 	// read movements parameter
-	movementsFlag := flag.String("movs", "", "String that describes Ash movements.")
+	movementsFlag := flag.String("movs", "", "Example of use: $ ./main -movs=NESO")
 	flag.Parse()
 	movements := []byte(strings.ToUpper(*movementsFlag))
 	// move Ash
